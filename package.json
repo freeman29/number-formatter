@@ -1,26 +1,29 @@
 {
-  "name": "@freeman29/number-formatter",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha --reporter spec"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/freeman29/number-formatter.git"
-  },
-  "author": "Francis Torda <tordafrancis@gmail.com> (https://github.com/freeman29)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/freeman29/number-formatter/issues"
-  },
-  "homepage": "https://github.com/freeman29/number-formatter#readme",
-  "engines": {
-    "node": ">=4.2.4"
-  },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0"
-  }
+	"name": "@freeman29/number-formatter",
+	"version": "0.0.1",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "node_modules/.bin/mocha --reporter spec",
+		"cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/freeman29/number-formatter.git"
+	},
+	"author": "Francis Torda <tordafrancis@gmail.com> (https://github.com/freeman29)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/freeman29/number-formatter/issues"
+	},
+	"homepage": "https://github.com/freeman29/number-formatter#readme",
+	"engines": {
+		"node": ">=4.2.4"
+	},
+	"devDependencies": {
+		"chai": "^3.5.0",
+		"coveralls": "^2.11.16",
+		"istanbul": "^0.4.5",
+		"mocha": "^3.2.0"
+	}
 }
